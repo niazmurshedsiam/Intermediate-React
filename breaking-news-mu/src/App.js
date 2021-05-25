@@ -2,6 +2,7 @@ import "./App.css";
 import News from "./Component/News/News";
 import Header from "./Component/Header/Header";
 import { useEffect, useState } from "react";
+import Chart from "./Component/Chart/Chart";
 function App() {
   const [articles, setArticle] = useState([]);
     useEffect(()=>{
@@ -12,11 +13,13 @@ function App() {
   return (
     <div>
       <h1 style={{textAlign:'center'}}>Bangla News</h1>
+      <Chart></Chart>
       <Header></Header>
 
       {
         articles.map( article => <News article={article}></News>)
       }
+      
       
       
       
