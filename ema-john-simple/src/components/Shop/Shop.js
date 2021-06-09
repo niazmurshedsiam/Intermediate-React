@@ -19,7 +19,7 @@ const Shop = () => {
   }
   // console.log(fakeData);
   return (
-    <div className="shop-container">
+    <div className="twin-container">
       <div className="product-container">
         {
             products.map(product => <Product showAddToCart={true} key={product.key} handleAddProduct={handleAddProduct} product={product} key={product.key}></Product>)
