@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './component/Home/Home';
 import NoMatch from './component/NoMatch/NoMatch';
+import FriendDetail from './component/FriendDetails/FriendDetails';
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route exact path="/">
             <Home></Home>
+          </Route>
+          <Route path="/friend/:friendId">
+            <FriendDetail></FriendDetail>
           </Route>
           <Route path="*">
             <NoMatch></NoMatch>
