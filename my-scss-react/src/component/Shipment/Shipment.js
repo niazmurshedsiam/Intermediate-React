@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { categoriesContext } from '../../App';
 
-const Shipment = (props) => {
-    const {count} = props;
+const Shipment = () => {
+    
+    const categorie = useContext(categoriesContext);
     return (
         <div>
-            <h1>This is Shipment page: {count}</h1>
+            <h1>This is Shipment page: {categorie}</h1>
         </div>
     );
 };
