@@ -6,7 +6,7 @@ import Shipment from './component/Shipment/Shipment';
 import { createContext, useState } from 'react';
 export const categoriesContext = createContext();
 function App() {
-  const [categorie,setCategorie] = useState(0);
+  const [categorie,setCategorie] = useState('laptop');
   return (
     <categoriesContext.Provider value={[categorie,setCategorie]}>
       <Header></Header>
