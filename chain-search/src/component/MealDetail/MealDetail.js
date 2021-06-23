@@ -9,8 +9,8 @@ const MealDetail = () => {
     },[])
     return (
         <div>
-            <h1>This is Meal Details</h1>
-            <h1>Meal: {meal?.strMeal}</h1>
+            <h1>This is Meal Details:{meal?.strMeal}</h1>
+            
         </div>
     );
 };
