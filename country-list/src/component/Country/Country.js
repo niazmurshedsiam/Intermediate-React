@@ -14,7 +14,7 @@ const Country = (props) => {
             <img src={flag} height="100px" style={{marginTop:'20px'}} alt="" />
             <h3 style={{textAlign:'center'}}>{name}</h3>
             <Link to={`/country/${alpha3Code}`}>
-                <button onClick={()=>handleClick(alpha3Code)}>Click</button>
+                <button onClick={()=>handleClick(alpha3Code)} style={{margin:'2px',padding:'2px'}}>Click</button>
             </Link>
             
 
